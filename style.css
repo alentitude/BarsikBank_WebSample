@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 240, 220);
+}
+
+/* SPECIFIC ATTRIBUTES */
+
+/* MODAL WINDOW */
+
+.wlcmsg,
+.errMsg,
+.usMsg {
+  background-color: rgb(35, 105, 245);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  /* BORDER */
+  border-radius: 15px;
+  padding: 5rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.transComplete {
+  background-color: rgb(35, 105, 245);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+
+  /* BORDER */
+  border-radius: 15px;
+  padding: 5rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+/* HIDE COMPONENT */
+
+.hide {
+  display: none;
+}
+
+.nuser {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.newusr {
+  margin-left: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  font-family: "Poppins";
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgb(35, 105, 245);
+  border-color: rgb(35, 105, 245);
+  color: white;
+}
+
+.newusr:hover {
+  background-color: rgb(80, 130, 211);
+  border-color: rgb(80, 130, 211);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.wlcmhd,
+.errhd,
+.compHead {
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  color: white;
+}
+
+.wlcmtxt,
+.comBod {
+  margin-bottom: 20px;
+  font-family: "Poppins";
+  color: white;
+}
+
+.comBod {
+  margin-bottom: 0;
+}
+
+.errtxt {
+  font-family: "Poppins";
+  color: white;
+}
+
+.newUs {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 12px;
+  background-color: rgb(15, 70, 160);
+  border-style: solid;
+  border-width: 0;
+  color: white;
+}
+
+.newUs:hover {
+  background-color: rgb(80, 130, 211);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.close {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  padding: 5px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(35, 105, 245);
+  border-style: none;
+  border-width: 1px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.closemsg {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 12px;
+  background-color: rgb(15, 70, 160);
+  border-style: solid;
+  border-width: 0;
+  color: white;
+}
+
+.closemsg:hover {
+  background-color: rgb(80, 130, 211);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* BANK PAGE */
+
+.navbar {
+  padding: 13px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  text-align: center;
+  padding: 5px;
+}
+
+.titletxt {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Open Sans";
+  color: rgb(35, 105, 245);
+}
+
+.logo {
+  display: inline-block;
+  height: 50px;
+  vertical-align: middle;
+  object-fit: scale-down;
+}
+
+.firblock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 750px;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cred {
+  width: 500px;
+  padding: 12px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.ctn {
+  margin-left: 8px;
+  width: 90px;
+  padding: 12px;
+  border-radius: 16px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Poppins";
+  background-color: rgb(35, 105, 245);
+  border-color: rgb(35, 105, 245);
+  color: white;
+}
+
+.ctn:hover {
+  background-color: rgb(80, 130, 211);
+  border-color: rgb(80, 130, 211);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mainpage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info,
+.balance {
+  display: inline-block;
+}
+
+.top,
+.bottom {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+  width: 600px;
+  height: 120px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.bottom {
+  width: 600px;
+  height: 225px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.info {
+  padding: 8px;
+  width: 300px;
+}
+
+.hello {
+  color: black;
+  font-family: "Poppins";
+  width: 125px;
+  margin-bottom: 0;
+}
+
+.nm,
+.em {
+  font-family: "Poppins";
+  margin-top: 0;
+}
+
+.balt {
+  font-family: "Poppins";
+  margin-bottom: 0;
+}
+
+.balance {
+  text-align: end;
+  padding-left: 95px;
+}
+
+.amt {
+  font-family: "Poppins";
+  margin-top: 0;
+}
+
+.tranhead {
+  text-align: center;
+  font-family: "Poppins";
+  padding: 10px;
+}
+
+.tranrec,
+.tranamt {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(35, 105, 245);
+}
+
+.tranbody {
+  padding-left: 150px;
+  padding-top: 5px;
+}
+
+.btTrans {
+  margin-left: 255px;
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 16px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgb(35, 105, 245);
+  color: white;
+  font-family: "Poppins";
+  border-color: rgb(35, 105, 245);
+}
+
+.btTrans:hover {
+  cursor: pointer;
+  background-color: rgb(80, 130, 211);
+  border-color: rgb(80, 130, 211);
+  transition: all 0.3s;
+}
+
+/* NEW USER CREATION */
+
+.userCreate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(35, 105, 245);
+  font-family: "Poppins";
+  color: white;
+  width: 650px;
+  padding-left: 3rem;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(35, 105, 245);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.uclose {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  padding: 5px;
+  font-size: 25px;
+  color: white;
+  background-color: rgb(35, 105, 245);
+  border-style: none;
+  border-width: 1px;
+}
+
+.uclose:hover {
+  cursor: pointer;
+}
+
+.uname,
+.uemail,
+.ubal {
+  width: 325px;
+  padding: 7px;
+  background-color: rgb(15, 70, 160);
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.fincr {
+  padding: 10px;
+  width: 85px;
+  margin-top: 15px;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(15, 70, 160);
+  border-width: 1px;
+  border-radius: 12px;
+  color: rgb(15, 70, 160);
+}
+
+.fincr:hover {
+  background-color: rgb(15, 70, 160);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}

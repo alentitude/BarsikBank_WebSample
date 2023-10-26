@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barsik Bank Limited | Next-gen banking made for you</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- WELCOMING MESSAGE -->
+    <div class="wlcmsg">
+      <h1 class="wlcmhd">Welcome!</h1>
+      <p class="wlcmtxt">
+        This is a beta for administrator access for Barsik Bank Limited. Kindly
+        stick to the functions provided in this built. We shall bring more
+        features very soon. Thank you. Happy Banking!
+      </p>
+      <button class="closemsg">Let's get testing!</button>
+    </div>
+    <div class="overlay"></div>
+  
+   <!-- ERROR MESSAGE #1 -->
+   <div class="errMsg hide">
+    <button class="close">&times;</button>
+    <h1 class="errhd">We're sorry!</h1>
+    <p class="errtxt">We couldn't find the user you're looking for. If that's not the case, then please excuse us while we work to make your experience better :)</p>
+   </div>
+
+    <!-- BANK PAGE -->
+    <nav class="navbar">
+      <div class="title">
+        <h2 class="titletxt">BARSIK BANK LIMITED</h2>
+        <img class="logo" src="assets/bb.jpeg" />
+      </div>
+    </nav>
+
+    <div class="firblock">
+      <input class="cred" type = 'text' placeholder="Enter account holder name (refer database)">
+      </input>
+      <button class="ctn">Continue</button>
+      <div class="nuser"><button class="newusr">Create new user</button></div>
+    </div>
+ 
+    <div class="userCreate hide">
+      <h1 style="margin-top: 30px
+      ;margin-bottom: 0px;">New user creation</h1>
+      <h2 style="margin-top: 10px; margin-bottom: 8px;">Please fill in your credentials below:-</h2>
+      <div class="field"><h3>Account holder name-</h3><input class="uname" type="text" placeholder="John Smith"></div>
+      <div class="field"><h3>Email ID-</h3><input class="uemail" type="text" placeholder="johnsmith123@gmail.com"></div>
+      <div class="field"><h3>Enter account balance-</h3><input class="ubal" type="number" placeholder="100"></div>
+      <div style="text-align: center; margin-bottom: 20px;"><button class="fincr">Create</button></div>
+    </div>
+
+    <div class="usMsg hide"><h1 style="font-family: 'Poppins'; color: white;">User created successfully</h1><p style="font-family: 'Poppins'; color: white; margin-top: 10px;">Happy banking!</p>
+    <button class="uclose">&times;</button></div>
+
+    <div class="mainpage hide">
+      <div class="top">
+      <div class="info"><h2 class="hello">Hello,</h2><h1 class="nm">name</h1><p class="em" style="font-size: smaller;">email</p></div>
+      <div class="balance"><h2 class="balt">Current Balance</h2><h1 class="amt">AMOUNT</h1></div>
+      </div>
+      <div class="bottom">
+      <div class="transfer window">
+        <div class="tranhead">
+          <h1>Quick Transfer</h1>
+        </div>
+        <div class="tranbody">
+          <input class="tranrec" type="text" placeholder="Enter transfer recipient">
+          <input class="tranamt" type="number" placeholder="Enter amount (₹)">
+        </div>
+        <button class="btTrans">Transfer now</button>
+      </div>
+    </div>
+
+    <div class="transComplete hide"><h1 class="compHead">Transaction Complete</h1><p class="comBod">Display Current Balance</p><p style="color: white; font-family: 'Poppins'; margin-top: 5px;">Thank you for using our services</p><button class="newUs">Select new account</button></div>
+    <script src="script.js"></script>
+  </body>
+</html>
